@@ -1,0 +1,28 @@
+2021-08-09 15:13:10.469  INFO 13188 --- [main] c.e.s.SpringBootLogApplication           : Starting SpringBootLogApplication using Java 11.0.11 on DESKTOP-3MMU11U with PID 13188 (C:\Users\MoonBeobSik\Desktop\Personal_Study\SpringBoot_Inflearn\SpringBootLog\target\classes started by MoonBeobSik in C:\Users\MoonBeobSik\Desktop\Personal_Study\SpringBoot_Inflearn\SpringBootLog)
+2021-08-09 15:13:10.470 DEBUG 13188 --- [main] c.e.s.SpringBootLogApplication           : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-09 15:13:10.470  INFO 13188 --- [main] c.e.s.SpringBootLogApplication           : No active profile set, falling back to default profiles: default
+2021-08-09 15:13:10.834  INFO 13188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-09 15:13:10.841  INFO 13188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-09 15:13:10.841  INFO 13188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-09 15:13:10.874  INFO 13188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-09 15:13:10.874  INFO 13188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 378 ms
+2021-08-09 15:13:11.017  INFO 13188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-09 15:13:11.024  INFO 13188 --- [main] c.e.s.SpringBootLogApplication           : Started SpringBootLogApplication in 0.744 seconds (JVM running for 1.081)
+2021-08-09 15:13:14.284  INFO 13188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-09 15:13:14.285  INFO 13188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-09 15:13:14.286  INFO 13188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-09 15:13:59.400  INFO 13188 --- [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03(J0x0dw0xee0xdf0x060x1f=0xc1;0xb3I0xcf&20x9ed0x940x9dX0xa7i"0xae0xb70xc60xe70xfdR0x9cs ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
